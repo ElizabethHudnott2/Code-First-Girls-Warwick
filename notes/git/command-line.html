@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CFG - Git Command Line</title>
+	<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+</head>
+<body>
+	<h1>Configuring Multiple Remote Repositories</h1>
+	<p>It is possible to configure git so that your local repository is capable of synchronizing with two remote repositories without using pull requests.</p>
+	<ol>
+		<li>In GitHub Desktop, on the left you will see a list of your repositories (more accurately local-remote repository pairs).  Right click on your repository and choose, "Open in Git Shell".</li>
+		<li>Follow these <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork" target="github-help">instructions for configuring the second remote repository</a>.</li>
+		<li>Follow these <a href="https://help.github.com/articles/syncing-a-fork" target="github-help">instructions for performing a pull from a secondary remote into your local repository</a>.  After completing this step you will have the original author's changes copied onto your local computer but the changes are not yet stored in your github.com account.</li>
+		<li>Click on the Sync button to push changes from your local repository into your personal remote repository.  You now have the original author's changes in both your local repository and your remote repository.  At this point you can probably say that all three repositories are now synchronized with each other and contain identical contents (though if you have any outstanding pull requests for which you are waiting for a response then the original author's repository won't be synchronized and you'll actually be <dfn>ahead</dfn> of them in this case, i.e. you will have all of the original author's contributions plus additional material of your own).</li>
+	</ol>
+</body>
+</html>
