@@ -12,13 +12,16 @@
 </head>
 <body onload="initialize()">
 	<header>
-		<img src="images/cfg-logo.png" alt="Code First: Girls logo" width="612"/><br/>
+		<img src="images/cfg-logo.png" alt="Code First: Girls logo" width="612" id="header-image"/><br/>
 		<span id="title-text">@Warwick</span>
-		<div id="navbar">
+		<nav>
+			<div class="menu-spacer">&nbsp;</div>
+
 			<div class="menu">
 				<a href="about/course.html" target="content-area">About</a>
 				<div class="menu-items">
 					<ul>
+						<li><a href="about/site.html" target="content-area">Web Site</a></li>
 						<li><a href="about/course.html" target="content-area">Course</a></li>
 						<li><a href="about/people.html" target="content-area">Team</a></li>
 						<li><a href="notes/git/intro.html" target="content-area">Contributing</a></li>
@@ -30,7 +33,7 @@
 				<a href="notes/html/intro.html" target="content-area">HTML</a>
 				<div class="menu-items">
 					<ul>
-						<li><a href="notes/html/intro.html" target="content-area">Intro</a></li>
+						<li><a href="notes/html/intro.html" target="content-area">Basics</a></li>
 					</ul>
 				</div>
 			</div>
@@ -43,13 +46,13 @@
 				<a href="notes/git/intro.html" target="content-area">Git</a>
 				<div class="menu-items">
 					<ul>
-						<li><a href="notes/git/intro.html" target="content-area">Intro</a></li>
+						<li><a href="notes/git/intro.html" target="content-area">Basics</a></li>
 						<li><a href="notes/git/command-line.html" target="content-area">Command Line</a></li>
 					</ul>
 				</div>
 			</div>
-		</div>
+		</nav>
 	</header>
-	<iframe id="content-area" name="content-area"></iframe>
+	<iframe id="content-area" name="content-area" src="about/site.html" onload="scrollToBottom()"></iframe>
 </body>
 </html>

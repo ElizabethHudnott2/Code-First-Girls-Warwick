@@ -16,14 +16,24 @@ h3 {
 	font-style: italic;
 }
 
-p {
-	text-align: justify;	
-}
-
 p, ul, ol {
 	color: #eeeeee;
 	line-height: 1.75;
-	max-width: 1000px;
-	margin-left: 40px;
-	margin-right: 40px;
+}
+
+@media (min-width: 600px) {
+	p {
+		text-align: justify;	
+	}
+
+	p, ul, ol {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+
+@media (max-width: 599px) {
+	p, ul, ol {
+		margin-right: 25px;
+	}
 }
