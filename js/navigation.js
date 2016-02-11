@@ -18,6 +18,10 @@ function toggleMenu(target) {
 	}
 }
 
+function scrollToBottom() {
+	window.scrollTo(0, document.body.scrollHeight);
+}
+
 function initialize() {
 	var menus = $('.menu');
 	
