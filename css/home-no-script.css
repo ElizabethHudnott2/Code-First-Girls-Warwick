@@ -1,0 +1,7 @@
+.menu-items:not(.menu-open) {
+	display: block;
+}
+
+.menu a {
+	text-decoration: underline;
+}

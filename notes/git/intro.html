@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CFG - Using Git</title>
+	<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+</head>
+<body>
+	<h1>Using Git to Share Files</h1>
+	<p>Soon you will be working in small groups to create your own web sites.  We will be using a tool called <em>git</em> to manage our work.  Git is a convenient way to share files with each other, keep track of who has changed what, and an easy way of backing up your work.  To check you have mastered the basics of using git correctly, Elizabeth has created this this web site for the whole class to share.  You can add something small to this site and share it with Elizabeth and the rest of the class and everyone on the internet and Elizabeth will be able to confirm you have managed to successfully use git and provide any assistance you might need.</p>
+
+	<p>A collection of files that you are choosing to manage using git is called a <dfn>repository</dfn>.  You create one repository on GitHub for each project that you're working on.  The software program that manages the backup and sharing is called <dfn>git</dfn>.  <dfn>GitHub</dfn> is a free web site for storing git repositories online.  We will also be using a second piece of software called <dfn>GitHub Desktop</dfn>, which is an alternative user interface for git that simplifies getting git and github.com working together.  GitHub Desktop relies on the raw git tool to be working behind the scenes though.</p>
+
+	<h2>Get Set Up</h2>
+	<ol>
+		<li>Create an account at <a href="https://www.github.com" target="github">github.com</a></li>
+		<li>Download and install both <a href="https://git-scm.com/downloads" target="download-git">git</a> and <a href="https://desktop.github.com" target="download-github-desktop">GitHub Desktop</a>.</li>
+		<li>Read through the help guides that were suggested in the homework for Session&nbsp;1, if you have not done so already, <a href="https://guides.github.com/introduction/getting-your-project-on-github/" target="guide1">guide&nbsp;1</a>, <a href="https://guides.github.com/activities/hello-world/">guide&nbsp;2</a>.  This page covers all of the steps needed to get started but you might wish to consult the other guides for diagrams, background information and alternative ways of doing things that you can try out later (if you've not already done so).</li>
+	</ol>
+
+	<h2>Create a Fork</h2>
+	<p>Go to <a href="https://github.com/ElizabethHudnott/Code-First-Girls-Warwick" target="github-lizzy">www.github.com/ElizabethHudnott/Code-First-Girls-Warwick</a> and click the button marked "Fork".  This will create a repository (i.e. a project) in your GitHub account that is initialized with the current contents of the Code First: Girls&nbsp;@&nbsp;Warwick web site.  Once you have created a fork you can do whatever you wish with it, even upload a new version to GitHub and it will stay within your own GitHub account.  You can, when you're ready however, send your changes back to be incorporated into Elizabeth's repository for everyone else to see, if you wish.</p>
+
+	<h2>Clone the Repository</h2>
+	<p>Next you need to download a copy of the repository onto your own computer.  Downloading a repository from the internet is called <dfn>cloning</dfn> it.</p>
+	<ol>
+		<li>Open the GitHub Desktop program.</li>
+		<li>Click on the + icon to create a new repository on your computer.</li>
+		<li>Choose the clone option and select the repository that you created on your github.com account.</li>
+	</ol>
+	<p>You now have three different git repositories, all of them for the same project!</p>
+	<ol>
+		<li>Elizabeth's original repository</li>
+		<li>Your <dfn>remote repository</dfn> on GitHub (your personal online backup)</li>
+		<li>Your <dfn>local repository</dfn> on your own computer</li>
+	</ol>
+
+	<h2>Synchronize the Local Repository with the Remote One</h2>
+	<p>We've only just cloned our local repository from github.com so it should be up to date!  However, usually the first thing that you will do when you start work is to synchronize your local repository with the remote one on your online GitHub account.  The remote repository is your own personal storage but if you tend to work on multiple computers then you might have uploaded some work to GitHub from another computer.  You might also have allowed someone else to update your online repository by accepting a <dfn>pull request</dfn> from them.</p>
+
+	<ol>
+		<li>Synchronize with your remote repository by clicking the Sync button.</li>
+	</ol>
+
+	<h2>Create a Branch</h2>
+	<p>One of the difficulties with using git is making sure that you plan your work in advance and remember to divide things into big tasks and small tasks effectively.  The big tasks are called <dfn>branches</dfn>.  Different people (or yourself in different guises) can work on different branches in <em>parallel</em> and they won't interfere with each other.  You will only see the updates that have been made in another branch get copied into your working branch when you explicitly choose to <em>merge</em> the two branches.</p>
+	
+	<p>Small tasks are called <dfn>commits</dfn>.  Whenever you arrive at convenient point in your work where you can say that you've achieved something then remember to commit it.  This way if you make a mistake later you can easily undo things and get your files back into same state they were in when you last committed and you will know that everything has been put back into a consistent state because it will be exactly as it was when you finished your last small task and committed it.</p>
+
+	<p>Two branches are special.  The <dfn>master</dfn> branch is one that you eventually hope to merge all of the non-special branches into (generally speaking, though you can also use branches to create several variations of the same project that you intend to keep as distinct versions indefinitely).  The <dfn>gh&#8209;pages</dfn> branch is special because you can use it to host the web site on the internet.  For example, this web site is accessible from <a href="https://elizabethhudnott.github.io/Code-First-Girls-Warwick" target="_top">https://elizabethhudnott.github.io/Code-First-Girls-Warwick</a>  However, if you created your repository by forking somebody else's then it's best to let them manage the gh&#8209;pages branch because otherwise you can easily get into a real mess.</p>
+	
+	<ol>
+		<li>Click on the tree icon in GitHub Desktop to create a new branch.  Name your branch <kbd>feature-<var>your-firstname</var>-profile</kbd>.  Conventionally, branches created for the purpose of implementing a specific feature (i.e. most of them) are given names beginning with the prefix <kbd>feature-</kbd>.</li>
+	</ol>
+
+	<h2>Make Some Changes</h2>
+	<p>Make some changes to the web site files.  Use a URL beginning with <kbd>file:///</kbd> to take a look at your changes in a web browser, as we did in Session&nbsp;1.  If you select About&rarr;Team from the navigation bar at the top of the web page then you will see that a space has already been created ready for each person to create a personal page on the site.</p>
+	<ol>
+		<li>Copy an image into the <kbd>images/profile-pics</kbd> folder.  Make sure that it is named <kbd><var>your-firstname</var>-thumbnail.jpg</kbd></li>
+		<li>Create a page named <kbd>about/profiles/<var>your-firstname</var>/index.html</kbd>  It can contain anything you like.</li>
+	</ol>
+
+	<h2>Commit the Changes</h2>
+	<ol>
+		<li>In GitHub Desktop you will see a list of the files that have been changed.</li>
+		<li>Ensure that that the correct branch is selected from the list at the top.  (<kbd>feature-<var>your-firstname</var>-profile</kbd>  should be selected from the list to right of the button that you used to create it.)</li>
+		<li>Type a few words into the summary box to describe the task that you just completed.  If it's a complicated one then you can use the description box as well if you wish.  This information doesn't appear anywhere on your web site, it just enables you to identify the different versions later.</li>
+		<li>Click on the Commit button.</li>
+	</ol>
+
+	<h2>And Repeat&hellip; (usually)</h2>
+	<p>Commonly at this point we would make some more changes and then commit the new changes.  There is a trade-off here between using the awesome power of git to experiment with different ideas running in parallel versus making the merging process as easy as possible.  If you go to merge your branch with the master and the same line in the same file has been changed in both your feature branch and the master branch then git will tell you that it cannot merge the branches automatically because there is a <dfn>conflict</dfn>.  If this happens then you have to open up each of files that contains conflicts in your text editor (Sublime Text) and you will find that git has inserted lines that look something like <samp>&lt;&lt;&lt;&lt;&lt;&lt; HEAD</samp> (search for 3 less than signs in a row).  You then have to manually edit the file to decide which version to keep (or blend them together).</p>
+
+	<p>A situation where there are many conflicts rapidly becomes a pain if you have to go through the process frequently.  To minimize the risk of conflicts you might choose to adopt a strategy of merging your branches often, after just a few commits, or even after just one commit.  On the other hand if you only merge branches very rarely then although merging them is a big task it is not too bothersome if it's only done rarely, say to assemble the pieces of a project at the end.  How frequently to merge is something you will need to decide on as a team according to your own preferences.</p>
+
+	<p>For now you only need to make a small change to the site and one commit (though more is fine too).  You can always come back to this branch and do some more work on it later if you wish.</p>
+
+	<h2>Merge the Branch into master</h2>
+	<ol>
+		<li>In GitHub Desktop select the master branch from the list at the top.</li>
+		<li>Underneath you will see a selection box marked "Compare".  Select your feature branch as the one to compare with master.</li>
+		<li>Click on the "Update from <kbd>feature-<var>your-firstname</var>-profile</kbd>" button.</li>
+	</ol>
+
+	<p>If you do decide to make further updates to your profile page by working on the <kbd>feature-<var>your-firstname</var>-profile</kbd> again at a later date then you might want to perform a merge in the opposite direction to get the latest updates from the master version copied into your feature branch.  In this case choose <kbd>feature-<var>your-firstname</var>-profile</kbd> in the top selection box and compare it to master.</p>
+
+	<h2>Push Changes to the Remote Repository (or Repositories)</h2>
+	<p>Copying changes from the repository that you're looking at to another one is called <dfn>pushing</dfn> and copying changes from another repository into the current one is called <dfn>pulling</dfn>.  The Sync button in GitHub desktop both <em>pulls</em> changes from your remote repository hosted on github.com into the local repository on your computer <em>and pushes</em> changes that you've committed into your local repository onto github.com.  This ensures your files are backed up if your computer breaks.</p>
+
+	<p>If your remote repository was created as a fork then you might also want to push changes <em>from your remote repository</em> into the original remote repository (in this case Elizabeth's).  Generally speaking you don't usually have permission to write data into other people's repositories though.  Instead of <em>pushing</em> into their repository you can send them a special kind of message to ask them to <em>pull</em> from your repository instead.</p>
+
+	<p>By default all repositories created on GitHub are readable by anyone (i.e. anyone can clone, fork and pull from them) but writeable only by the person who created them (i.e. only the creator can push).  It is also possible to create private repositories that other people cannot read.  GitHub usually charge for this but they have a free offer for students.  Similarly with writing, it is possible to adjust the settings to allow another user to push changes directly into your repository, but you have to really trust them because they could do anything with any of your files!</p>
+
+	<ol>
+		<li>Click on the Sync button to synchronize your local and remote repositories.</li>
+		<li>Open https://github.com/<var>your-github-username</var>/<var>your-repository-name</var>.</li>
+		<li>Click on the Pull Request button and follow the instructions.  More information is available in this <a href="https://help.github.com/articles/using-pull-requests" target="github-help">guide</a>.</li>
+		<li>The person to whom you sent the pull request has the opportunity to review your changes and maybe make some suggestions for further improvements before they decide to accept the changes.</li>
+	</ol>
+
+	<h2>Pull Changes into your Fork</h2>
+	<p>So far we have covered pushing and pulling between your local repository and your remote repository.  We also covered how to push from your remote repository into the original repository (using a pull request).  One thing still remains.  How to pull changes the originator has made to their repository into your repositories?  To do this, create a pull request in the reverse direction and then approve your own pull request.  Don't forget to click on the Sync button in GitHub desktop after you have accepted the pull request so that your local repository is up to date too.
+
+	<h2>It sounds complicated&hellip;</h2>
+	<p>&hellip;but it gets easier.  Once everything is set up it soon becomes quite routine doing pulls, commits, merges and pushes.</p>
+</body>
+</html>

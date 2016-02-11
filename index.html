@@ -2,8 +2,54 @@
 <html>
 <head>
 	<title>Code First: Girls @ Warwick</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="css/home.css"/>
+	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/navigation.js"></script>
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="css/home-no-script.css"/>		
+	</noscript>
 </head>
-<body>
+<body onload="initialize()">
+	<header>
+		<img src="images/cfg-logo.png" alt="Code First: Girls logo" width="612"/><br/>
+		<span id="title-text">@Warwick</span>
+		<div id="navbar">
+			<div class="menu">
+				<a href="about/course.html" target="content-area">About</a>
+				<div class="menu-items">
+					<ul>
+						<li><a href="about/course.html" target="content-area">Course</a></li>
+						<li><a href="about/people.html" target="content-area">Team</a></li>
+						<li><a href="notes/git/intro.html" target="content-area">Contributing</a></li>
+					</ul>
+				</div>
+			</div>
 
+			<div class="menu">
+				<a href="notes/html/intro.html" target="content-area">HTML</a>
+				<div class="menu-items">
+					<ul>
+						<li><a href="notes/html/intro.html" target="content-area">Intro</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="menu">
+				<a href="notes/css/intro.html" target="content-area">CSS</a>
+			</div>
+
+			<div class="menu">
+				<a href="notes/git/intro.html" target="content-area">Git</a>
+				<div class="menu-items">
+					<ul>
+						<li><a href="notes/git/intro.html" target="content-area">Intro</a></li>
+						<li><a href="notes/git/command-line.html" target="content-area">Command Line</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<iframe id="content-area" name="content-area"></iframe>
 </body>
 </html>
